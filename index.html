@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Spotify</title>
+</head>
+
+<body>    
+    <div class="container display bg-black">
+        <div class="left border">
+            <div class="home bg-gray m-1 p-1 rounded">
+                <div class="logo"><img class="invert" src="./logo.svg" alt="logo"></div>
+                <div class="close "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" color="#000000" fill="none">
+                    <path d="M19.0005 4.99988L5.00049 18.9999M5.00049 4.99988L19.0005 18.9999" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></div>
+                <ul>
+                    <li><img class="invert" src="./home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="./search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-gray m-1 p-1 rounded">
+                <div class="heading invert">
+                    <img src="./library.svg" alt="">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href=""><span>Legal</span></a></div>
+                    <div><a href=""><span>Safety&Privacy Center</span></a></div>
+                    <div><a href=""><span>Privacy Policy</span></a></div>
+                    <div><a href=""><span>Cookies</span></a></div>
+                    <div><a href=""><span>About Ads</span></a></div>
+                    <div><a href=""><span>Accessibility</span></a></div>
+                </div>
+                <div class="cookies">Cookies</div>
+                <div><button class="btn bg-gray"><img class="invert" src="./lang.svg" alt="">English</button></div>
+                <div class="copy">&copy  2025 Pavan Sonawane, All Rights Reserved.</div>
+            </div>
+        </div>
+        <div class="right border  ">
+            <div class="blank">&nbsp</div>
+            <header class=" header ">
+                <div class="hamburger"><svg class="invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></div>
+                <div class="nav "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="white" fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="white"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="white"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></div>
+                <div class="search bg-gray">
+                    <div class="one"><img class="invert" src="./search.svg" alt="search">
+                        <form action="">
+                            <input type="text" class="bg-gray" placeholder="What do you want to play? ">
+                        </form>
+                    </div>
+                    
+                    <div class="three"><img class="invert" src="./brouse.svg" alt="brouse"> </div>
+                </div>
+                <div class="button">
+                    <div class="btn1">Sign up</div>
+                    <div class="btn2">Login</div>
+                </div>
+            </header>
+            <div class="login x">
+                <div class="box">
+                    <h2>Login</h2>
+                    <form id="login">
+                        <div>
+                            <label for="loginusername">Username</label>
+                            <input type="text" name="" id="loginusername" placeholder="Enter Username" required>
+                        </div>
+                        <div>
+                            <label for="loginpassword">Password</label>
+                            <input type="password" name="" id="loginpassword" placeholder="Enter Password" required>
+                        </div>
+                        <div>
+                            <button type="submit">Login</button>
+                        </div>
+                        <div>Don't have account? <a class="slink" style="color: blue;">Sign up</a></div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="signup x">
+                <div class="box">
+                    <h2>Sign-up</h2>
+                    <form id="signup">
+                        <div>
+                            <label for="loginusername">Username</label>
+                            <input type="text" name="" id="signupusername" placeholder="Enter Username" required>
+                        </div>
+                        <div>
+                            <label for="loginemail">Email</label>
+                            <input type="email" name="" id="signupemail" placeholder="Enter email" required>
+                        </div>
+                        <div>
+                            <label for="loginpassword">Password</label>
+                            <input type="password" name="" id="signuppasswors" placeholder="Enter Password" required>
+                        </div>
+                        <div>
+                            <label for="logincpassword">Correct Password</label>
+                            <input type="password" name="" id="signupcpassword" placeholder="Correct Password" required>
+                        </div>
+                        <div>
+                            <button type="submit">Sign-up</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="main-body rounded  bg-gray">
+                <div class="popular-artists">
+                    <h1>Popular artists</h1>
+                    <div class="cardcontainer">
+                        <div data-folder="Pritam" class="card">
+                            <div class="play"><button><img src="./play.svg" alt="play"></button></div>
+                            <img src="./first.jpg" alt="">
+                            <h2>Pritam</h2>
+                            <p>Artist</p>
+                        </div>
+                        <div data-folder="arjit" class="card ">
+                            <div class="play"><button><img src="./play.svg" alt="play"></button></div>
+                            <img src="./second.jpg" alt="">
+                            <h2>Arjit Singh</h2>
+                            <p>Artist</p>
+                        </div>
+                        <div data-folder="Sachin" class="card ">
+                            <div class="play"><button><img src="./play.svg" alt="play"></button></div>
+                            <img src="./third.jpg" alt="">
+                            <h2>Sachin-jigar</h2>
+                            <p>Artist</p>
+                        </div>
+                        <div data-folder="x" class="card">
+                            <div class="play"><button><img src="./play.svg" alt="play"></button></div>
+                            <img src="./forth.jpg" alt="">
+                            <h2>A.R.Rahman</h2>
+                            <p>Artist</p>
+                        </div>
+                        <div data-folder="y" class="card">
+                            <div class="play"><button><img src="./play.svg" alt="play"></button></div>
+                            <img src="./sisth.jpg" alt="">
+                            <h2>Atif-Aslam</h2>
+                            <p>Artist</p>
+                        </div>
+                        <div data-folder="z" class="card">
+                            <div class="play"><button><img src="./play.svg" alt="play"></button></div>
+                            <img src="./fifth.jpg" alt="">
+                            <h2>Vishal-Shekhar</h2>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="popular-singer">
+                <h1>Popular artists and singers</h1>
+                <div class="cardcontainer">
+                    <div data-folder="Pritam" class="card-1 card" >
+                        <div class="play"><button><img   src="./play.svg" alt="play"></button></div>
+                        <img  src="./one.jpeg" alt="">
+                        <h2>Golry</h2>
+                        <p>Yo Yo Honey Singh</p>
+                    </div>
+                    <div data-folder="arjit" class="card-1 card">
+                        <div class="play"><button><img src="./play.svg" alt="play"></button></div>
+                        <img src="./two.jpeg" alt="">
+                        <h2>Ashique 2</h2>
+                        <p>Mithun,Aniket Tiwari</p>
+                    </div>
+                    <div data-folder="x" class="card-1 card ">
+                        <div class="play"><button><img src="./play.svg" alt="play"></button></div>
+                        <img src="./three.jpeg" alt="">
+                        <h2>Ye Jawani He</h2>
+                        <p>Pritem</p>
+                    </div>
+                    <div data-folder="x" class="card-1 card ">
+                        <div class="play"><button><img src="./play.svg" alt="play"></button></div>
+                        <img src="./four.jpeg" alt="">
+                        <h2>Who(Remix)</h2>
+                        <p>Jimin</p>
+                    </div>
+                    <div data-folder="x" class="card-1 card">
+                        <div class="play"><button><img src="./play.svg" alt="play"></button></div>
+                        <img src="./five.jpeg" alt="">
+                        <h2>Making-Money</h2>
+                        <p>Karam Aujla</p>
+                    </div>
+                    <div data-folder="x" class="card-1 card">
+                        <div class="play"><button><img src="./play.svg" alt="play"></button></div>
+                        <img src="./six.jpeg" alt="">
+                        <h2>Jo Tum Mere Ho</h2>
+                        <p>Anuj Jain</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="playbar ">
+                <div class="songinfo"></div>
+                <div class="prev"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="white" fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="white"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></div>
+                <div class="play-song"><img class="o" src="play-song.svg" alt="">
+                </div>
+                <div class="next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="#000000" fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="white"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></div>
+                <div class="songtime"></div>
+            </div>
+            <div class="seekbar">
+                <div class="circle"></div>
+            </div>
+            
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
