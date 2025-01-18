@@ -64,38 +64,32 @@ document.getElementById('login').addEventListener('submit', (event) => {
     document.getElementById('login').reset();
     document.querySelector(".login").classList.add("x")
 });
-
 async function getsongs(folder) {
     currFolder = folder;
-    let a = await fetch(`${folder}/`)
-    let response = await a.text();
-    let div = document.createElement("div")
-    div.innerHTML = response;
-    let as = div.getElementsByTagName("a");
-    songs = [];
-    for (let index = 0; index < as.length; index++) {
-        const element = as[index];
-        if (element.href.endsWith(".mp3")) {
-            songs.push(element.href.split(`/${folder}/`)[1])
-        }
-    }
-    let songul = document.querySelector(".songlist").getElementsByTagName("ul")[0]
-    songul.innerHTML = ""
+    // Predefine song list for each folder
+    const predefinedSongs = {
+        'songs/arjit': ['Humdard.mp3', 'song2.mp3', 'song3.mp3'],
+        'songs/AnotherFolder': ['track1.mp3', 'track2.mp3'],
+    };
+
+    songs = predefinedSongs[folder] || [];
+    let songul = document.querySelector(".songlist").getElementsByTagName("ul")[0];
+    songul.innerHTML = "";
+
     for (const song of songs) {
-        songul.innerHTML = songul.innerHTML + `
-                        <div class="show-song">
-                            <li><img src="song.svg" alt="">
-                                <div class="sn">${song.replaceAll("%20"," ").replaceAll("%2"," ")}</div><img
-                                    src="play-song.svg" alt="">
-                            </li>
-                        </div>`;
+        songul.innerHTML += `
+            <div class="show-song">
+                <li><img src="song.svg" alt="">
+                    <div class="sn">${song.replaceAll("%20", " ").replaceAll("%2", " ")}</div><img
+                        src="play-song.svg" alt="">
+                </li>
+            </div>`;
     }
 
     Array.from(document.querySelector(".songlist").getElementsByTagName("li")).forEach(e => {
-        e.addEventListener("click",()=>{
-
+        e.addEventListener("click", () => {
             playmusic(e.querySelector(".sn").innerHTML.trim());
-        })
+        });
     });
 }
 // sec to min
