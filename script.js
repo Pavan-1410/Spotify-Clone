@@ -67,7 +67,7 @@ document.getElementById('login').addEventListener('submit', (event) => {
 
 async function getsongs(folder) {
     currFolder = folder;
-    let a = await fetch(`/spotify_clone/${folder}/`)
+    let a = await fetch(`http://127.0.0.1:5500/spotify_clone/${folder}/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
